@@ -1,0 +1,14 @@
+# Configurações locais do editor
+.vscode/
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Dependências e arquivos temporários
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db

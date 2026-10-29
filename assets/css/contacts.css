@@ -1,0 +1,422 @@
+
+/* ========================================
+   CLAUDESPORT — CONTATOS
+======================================== */
+
+.pagina-contatos {
+    overflow: hidden;
+    color: var(--cor-texto, #f5f5f5);
+}
+
+/* ---------- Correção da logo ---------- */
+
+.cabecalho .marca {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cabecalho .marca img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    max-width: 42px;
+    max-height: 42px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ---------- Cabeçalho da página ---------- */
+
+.contato-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 480px;
+    padding: clamp(64px, 9vw, 112px) max(24px, calc((100% - 1120px) / 2));
+    background:
+        radial-gradient(
+            ellipse at 85% 45%,
+            rgb(217 35 50 / 14%),
+            transparent 45%
+        ),
+        var(--cor-fundo, #080809);
+    border-bottom: 1px solid var(--cor-borda, #26262c);
+}
+
+.contato-hero-conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+}
+
+.contato-etiqueta {
+    margin: 0 0 20px;
+    color: var(--cor-vermelha, #d92332);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.contato-hero h1 {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(58px, 9vw, 104px);
+    font-style: italic;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -1px;
+}
+
+.contato-hero h1 span,
+.contato-final h2 span {
+    color: var(--cor-vermelha, #d92332);
+}
+
+.contato-introducao {
+    max-width: 570px;
+    margin: 28px 0;
+    color: var(--cor-texto-secundario, #a5a5ad);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.contato-hero-detalhe {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+    padding-left: 28px;
+    border-left: 2px solid var(--cor-vermelha, #d92332);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(18px, 2vw, 26px);
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+}
+
+.detalhe-vermelho {
+    color: var(--cor-vermelha, #d92332);
+}
+
+/* ---------- Botões ---------- */
+
+.contato-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 48px;
+    padding: 0 22px;
+    background: var(--cor-vermelha, #d92332);
+    color: #fff;
+    border: 1px solid var(--cor-vermelha, #d92332);
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contato-botao:hover {
+    background: var(--cor-vermelha-hover, #b91c2a);
+    transform: translateY(-2px);
+}
+
+.contato-botao:focus-visible,
+.contato-link:focus-visible {
+    outline: 2px solid var(--cor-vermelha, #d92332);
+    outline-offset: 4px;
+}
+
+/* ---------- Área dos canais ---------- */
+
+.contato-canais {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 88px 0;
+}
+
+.contato-secao-titulo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 36px;
+}
+
+.contato-secao-titulo .contato-etiqueta {
+    margin-bottom: 12px;
+}
+
+.contato-secao-titulo h2 {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(36px, 5vw, 56px);
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.contato-secao-titulo > p {
+    max-width: 390px;
+    margin: 0;
+    color: var(--cor-texto-secundario, #a5a5ad);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ---------- Cartões ---------- */
+
+.contato-grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.contato-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 270px;
+    padding: 26px;
+    background: var(--cor-superficie, #121216);
+    border: 1px solid var(--cor-borda, #26262c);
+    border-radius: 7px;
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.contato-card:hover {
+    border-color: var(--cor-vermelha, #d92332);
+    background: #17171c;
+    transform: translateY(-4px);
+}
+
+.contato-card-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.contato-icone {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    color: var(--cor-vermelha, #d92332);
+    background: rgb(217 35 50 / 10%);
+    border: 1px solid rgb(217 35 50 / 25%);
+    border-radius: 6px;
+}
+
+.contato-icone svg {
+    display: block;
+    width: 23px;
+    height: 23px;
+}
+
+.contato-numero {
+    color: #66666f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.contato-card h3 {
+    margin: 0 0 12px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.contato-card h3 span {
+    color: var(--cor-texto-secundario, #a5a5ad);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contato-card > p {
+    margin: 0 0 24px;
+    color: var(--cor-texto-secundario, #a5a5ad);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.contato-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    color: var(--cor-texto, #f5f5f5);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contato-link span {
+    color: var(--cor-vermelha, #d92332);
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.contato-link:hover {
+    color: var(--cor-vermelha, #d92332);
+}
+
+.contato-link:hover span {
+    transform: translate(2px, -2px);
+}
+
+/* ---------- Chamada final ---------- */
+
+.contato-final {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto 80px;
+    padding: clamp(48px, 7vw, 84px) 24px;
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgb(217 35 50 / 13%),
+            transparent 65%
+        ),
+        var(--cor-superficie, #121216);
+    border: 1px solid var(--cor-borda, #26262c);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contato-final .contato-etiqueta {
+    margin-bottom: 16px;
+}
+
+.contato-final h2 {
+    margin: 0 0 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(38px, 6vw, 64px);
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape-contatos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px max(24px, calc((100% - 1120px) / 2));
+    border-top: 1px solid var(--cor-borda, #26262c);
+    color: var(--cor-texto-secundario, #a5a5ad);
+    font-size: 12px;
+}
+
+.rodape-contatos p {
+    margin: 0;
+}
+
+.rodape-contatos a {
+    color: var(--cor-texto, #f5f5f5);
+    text-decoration-color: var(--cor-vermelha, #d92332);
+    text-underline-offset: 4px;
+}
+
+.rodape-contatos a:hover {
+    color: var(--cor-vermelha, #d92332);
+}
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 900px) {
+    .contato-hero {
+        min-height: 420px;
+    }
+
+    .contato-hero-detalhe {
+        display: none;
+    }
+
+    .contato-grade {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contato-secao-titulo {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* ---------- Celulares ---------- */
+
+@media (max-width: 560px) {
+    .contato-hero {
+        min-height: 400px;
+        padding: 64px 24px;
+    }
+
+    .contato-hero h1 {
+        font-size: clamp(54px, 13vw, 76px);
+    }
+
+    .contato-introducao {
+        font-size: 14px;
+    }
+
+    .contato-canais {
+        width: calc(100% - 36px);
+        padding: 56px 0;
+    }
+
+    .contato-secao-titulo h2 {
+        font-size: 42px;
+    }
+
+    .contato-grade {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contato-card {
+        min-height: 235px;
+        padding: 24px;
+    }
+
+    .contato-final {
+        width: calc(100% - 36px);
+        margin-bottom: 48px;
+        padding: 48px 18px;
+    }
+
+    .rodape-contatos {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 18px;
+    }
+}
+
+/* ---------- Acessibilidade ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .contato-botao,
+    .contato-card,
+    .contato-link,
+    .contato-link span {
+        transition: none;
+    }
+
+    .contato-botao:hover,
+    .contato-card:hover {
+        transform: none;
+    }
+}

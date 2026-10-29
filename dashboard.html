@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+    <title>Minha conta | ClaudeSport</title>
+</head>
+
+<body>
+    
+<header class="cabecalho">
+    <a href="index.html" class="marca" aria-label="ClaudeSport - Início">
+        <img
+            src="assets/images/Emblema de Leão com Coroa Vermelha.png"
+            alt=""
+            class="marca-logo"
+        >
+        <span class="marca-claude">CLAUDE</span>
+        <span class="marca-store">SPORT</span>
+    </a>
+
+    <button
+        class="botao-menu"
+        id="botao-menu"
+        type="button"
+        aria-label="Abrir menu"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="menu-principal" class="menu-principal" aria-label="Navegação principal">
+        <a href="index.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 10 9-7 9 7"/>
+                <path d="M5 9v12h14V9"/>
+                <path d="M9 21v-7h6v7"/>
+            </svg>
+            <span>Início</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <a href="products.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 7h15l-1.5 9h-12z"/>
+                <path d="M6 7 4.5 3H2"/>
+                <circle cx="9" cy="20" r="1"/>
+                <circle cx="18" cy="20" r="1"/>
+            </svg>
+            <span>Produtos</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <a href="about.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M8.2 12.7 7 22l5-3 5 3-1.2-9.3"/>
+            </svg>
+            <span>Sobre</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <a href="contacts.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span>Contato</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <a href="login.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="7" r="4"/>
+                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+            </svg>
+            <span>Entrar</span>
+            <span class="seta-menu">↗</span>
+        </a>
+    </nav>
+</header>
+
+    <main class="dashboard">
+        <aside class="dashboard-menu">
+            <p class="dashboard-etiqueta">ÁREA DO CLIENTE</p>
+
+            <h1>Minha conta<span>.</span></h1>
+
+            <nav aria-label="Menu da conta">
+                <a href="#inicio" class="dashboard-link ativo">
+                    Visão geral
+                </a>
+
+                <a href="#carrinho" class="dashboard-link">
+                    Meu carrinho
+                </a>
+
+                <a href="#perfil" class="dashboard-link">
+                    Meu perfil
+                </a>
+
+                <a href="#pedidos" class="dashboard-link">
+                    Meus pedidos
+                </a>
+            </nav>
+        </aside>
+
+        <div class="dashboard-conteudo">
+
+            <section id="inicio" class="dashboard-secao">
+                <p class="dashboard-etiqueta">BEM-VINDO À CLAUDESPORT</p>
+                <h2>Sua evolução começa aqui.</h2>
+
+                <p class="dashboard-descricao">
+                    Acompanhe suas compras e gerencie sua conta
+                    em um só lugar.
+                </p>
+
+                <div class="dashboard-resumo">
+                    <article class="dashboard-card">
+                        <p>Itens no carrinho</p>
+                        <strong id="total-itens">0</strong>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <p>Total do carrinho</p>
+                        <strong id="total-carrinho">R$ 0,00</strong>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <p>Pedidos realizados</p>
+                        <strong id="total-pedidos">0</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section id="carrinho" class="dashboard-secao">
+                <h2>Meu carrinho<span>.</span></h2>
+
+                <div id="lista-carrinho">
+                    <p class="dashboard-descricao">
+                        Seus produtos serão exibidos aqui.
+                    </p>
+                </div>
+
+                <div class="dashboard-total">
+                    <span>Subtotal</span>
+                    <strong id="subtotal-carrinho">R$ 0,00</strong>
+                </div>
+            </section>
+
+            <section id="perfil" class="dashboard-secao">
+                <h2>Meu perfil<span>.</span></h2>
+
+                <p class="dashboard-descricao">
+                    Em breve, você poderá consultar e editar
+                    seus dados pessoais.
+                </p>
+            </section>
+
+            <section id="pedidos" class="dashboard-secao">
+                <h2>Meus pedidos<span>.</span></h2>
+
+                <p class="dashboard-descricao">
+                    Seus pedidos serão exibidos aqui quando
+                    implementarmos o processo de compra.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ClaudeSport. Todos os direitos reservados.</p>
+        <a href="privacy.html">Privacidade e LGPD</a>
+    </footer>
+    <script src="assets/js/protect-dashboard.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="icon" href="assets/images/Emblema de Leão com Coroa Vermelha.png" type="image/png">
+    <title>ClaudeSport: Seu esporte começa aqui.</title>
+</head>
+<body>
+    
+<header class="cabecalho">
+    <a href="index.html" class="marca" aria-label="ClaudeSport - Início">
+        <img
+            src="assets/images/Emblema de Leão com Coroa Vermelha.png"
+            alt=""
+            class="marca-logo"
+        >
+        <span class="marca-claude">CLAUDE</span>
+        <span class="marca-store">SPORT</span>
+    </a>
+
+    <button
+        class="botao-menu"
+        id="botao-menu"
+        type="button"
+        aria-label="Abrir menu"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="menu-principal" class="menu-principal" aria-label="Navegação principal">
+
+        <!-- Início -->
+        <a href="index.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 10 9-7 9 7"/>
+                <path d="M5 9v12h14V9"/>
+                <path d="M9 21v-7h6v7"/>
+            </svg>
+            <span>Início</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <!-- Produtos -->
+        <a href="products.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 7h15l-1.5 9h-12z"/>
+                <path d="M6 7 4.5 3H2"/>
+                <circle cx="9" cy="20" r="1"/>
+                <circle cx="18" cy="20" r="1"/>
+            </svg>
+            <span>Produtos</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <!-- Sobre -->
+        <a href="about.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M8.2 12.7 7 22l5-3 5 3-1.2-9.3"/>
+            </svg>
+            <span>Sobre</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <!-- Contato -->
+        <a href="contacts.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span>Contato</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+        <!-- Entrar -->
+        <a href="login.html">
+            <svg class="icone-menu" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="7" r="4"/>
+                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+            </svg>
+            <span>Entrar</span>
+            <span class="seta-menu">↗</span>
+        </a>
+
+    </nav>
+</header>
+    <main>
+         <section class="destaque">
+            <p>PERFORMANCE • ESTILO • ESPORTE</p>
+            <h1>Vista sua melhor versão</h1>
+
+            <p>
+                Artigos esportivos para quem busca evolução
+                dentro e fora do jogo
+            </p>
+
+            <a href="products.html">Explorar produtos</a>
+        </section>
+
+<section class="carrossel" aria-label="Campanhas em destaque">
+
+    <div class="carrossel-container" id="carrossel-container">
+
+        <article class="banner ativo">
+            <img
+                src="assets/images/atleta-correndo.jpg"
+                alt="Atleta correndo"
+            >
+            <div class="banner-conteudo">
+                <p class="banner-etiqueta">PERFORMANCE</p>
+                <h3>Supere seus limites</h3>
+                <p>Seu próximo nível começa no próximo treino.</p>
+                <a href="products.html" class="banner-botao">
+                    Explorar produtos
+                </a>
+            </div>
+        </article>
+
+        <article class="banner">
+            <img
+                src="assets/images/sapato-esportivo.jpg"
+                alt="Sapato de treinos">
+            <div class="banner-conteudo">
+                <p class="banner-etiqueta">FOCO E EVOLUÇÃO</p>
+                <h3>Não pare de evoluir</h3>
+                <p>Equipamentos para acompanhar sua dedicação.</p>
+                <a href="products.html" class="banner-botao">
+                    Encontre seu equipamento
+                </a>
+            </div>
+        </article>
+
+        <article class="banner">
+            <img
+                src="assets/images/football.png"
+                alt="Jogadores praticando futebol"
+            >
+            <div class="banner-conteudo">
+                <p class="banner-etiqueta">PAIXÃO PELO JOGO</p>
+                <h3>Entre em campo para vencer</h3>
+                <p>Prepare-se para fazer a diferença dentro de campo.</p>
+                <a href="products.html" class="banner-botao">
+                    Ver produtos
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="produtos-destaque">
+    <div class="produtos-cabecalho">
+        <div>
+            <p class="produtos-etiqueta">ESCOLHIDOS PARA VOCÊ</p>
+            <h2>Produtos em destaque<span>.</span></h2>
+            <p class="produtos-subtitulo">
+                Equipamentos para acompanhar sua evolução.
+            </p>
+        </div>
+
+        <a href="products.html" class="produtos-ver-todos">
+            Ver todos os produtos <span>↗</span>
+        </a>
+    </div>
+
+    <div class="produtos-grade">
+
+        <article class="produto-card"
+            data-id="tenis-corrida"
+            data-nome="Tênis de Corrida"
+            data-preco="299.90">
+
+            <a href="products.html" class="produto-imagem">
+                <img src="assets/images/products/tenis-de-corrida.jpg"
+                     alt="Tênis de corrida">
+                <span class="produto-tag">MAIS VENDIDO</span>
+            </a>
+
+            <div class="produto-info">
+                <p class="produto-categoria">CORRIDA</p>
+                <h3>Tênis de Corrida</h3>
+                <p class="produto-descricao">
+                    Leveza para superar seus limites.
+                </p>
+
+                <div class="produto-rodape">
+                    <p class="produto-preco">R$ 299,90</p>
+                    <button class="produto-adicionar"
+                        type="button"
+                        data-adicionar="tenis-corrida"
+                        aria-label="Adicionar Tênis de Corrida ao carrinho">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="produto-card"
+            data-id="camiseta-dry-fit"
+            data-nome="Camiseta Dry Fit"
+            data-preco="89.90">
+
+            <a href="products.html" class="produto-imagem">
+                <img src="assets/images/products/camisa-dry-fit.jpg"
+                     alt="Camiseta esportiva Dry Fit">
+                <span class="produto-tag">PERFORMANCE</span>
+            </a>
+
+            <div class="produto-info">
+                <p class="produto-categoria">VESTUÁRIO</p>
+                <h3>Camiseta Dry Fit</h3>
+                <p class="produto-descricao">
+                    Conforto para cada movimento.
+                </p>
+
+                <div class="produto-rodape">
+                    <p class="produto-preco">R$ 89,90</p>
+                    <button class="produto-adicionar"
+                        type="button"
+                        data-adicionar="camiseta-dry-fit"
+                        aria-label="Adicionar Camiseta Dry Fit ao carrinho">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="produto-card"
+            data-id="bola-futebol"
+            data-nome="Bola de Futebol"
+            data-preco="129.90">
+
+            <a href="products.html" class="produto-imagem">
+                <img src="assets/images/products/bola-de-futebol.jpg"
+                     alt="Bola de futebol">
+                <span class="produto-tag">FUTEBOL</span>
+            </a>
+
+            <div class="produto-info">
+                <p class="produto-categoria">FUTEBOL</p>
+                <h3>Bola de Futebol</h3>
+                <p class="produto-descricao">
+                    Precisão para jogar melhor.
+                </p>
+
+                <div class="produto-rodape">
+                    <p class="produto-preco">R$ 129,90</p>
+                    <button class="produto-adicionar"
+                        type="button"
+                        data-adicionar="bola-futebol"
+                        aria-label="Adicionar Bola de Futebol ao carrinho">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="produto-card"
+            data-id="halteres"
+            data-nome="Halteres"
+            data-preco="119.90">
+
+            <a href="products.html" class="produto-imagem">
+                <img src="assets/images/products/halteres.jpg"
+                     alt="Halteres para treino">
+                <span class="produto-tag">TREINO</span>
+            </a>
+
+            <div class="produto-info">
+                <p class="produto-categoria">ACADEMIA</p>
+                <h3>Halteres</h3>
+                <p class="produto-descricao">
+                    Mais força para sua rotina.
+                </p>
+
+                <div class="produto-rodape">
+                    <p class="produto-preco">R$ 119,90</p>
+                    <button class="produto-adicionar"
+                        type="button"
+                        data-adicionar="halteres"
+                        aria-label="Adicionar Halteres ao carrinho">
+                        +
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    </main>
+    <footer>
+          <p>&copy; 2026 ClaudeSport. Todos os direitos reservados.</p>
+          <a href="privacy.html">Privacidade e LGPD</a>   
+    </footer>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/carrossel.js"></script>
+<script src="assets/js/carrinho.js"></script>
+</body>
+</html>

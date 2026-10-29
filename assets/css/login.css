@@ -1,0 +1,174 @@
+
+/* ========================================
+   LOGIN — CLAUDESPORT
+======================================== */
+
+.pagina-login {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px;
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(217, 35, 50, 0.12),
+            transparent 55%
+        ),
+        var(--cor-fundo);
+}
+
+/* Cartão principal */
+
+.login-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 44px;
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+}
+
+/* Textos */
+
+.login-etiqueta {
+    margin: 0 0 14px;
+    color: var(--cor-vermelha);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.login-card h1 {
+    margin: 0 0 14px;
+    color: var(--cor-texto);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.login-card h1 span {
+    color: var(--cor-vermelha);
+}
+
+.login-descricao {
+    margin: 0 0 32px;
+    color: var(--cor-texto-secundario);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Formulário */
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-login label {
+    margin-top: 10px;
+    color: var(--cor-texto);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#form-login input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    outline: none;
+    font: inherit;
+    transition:
+        border-color var(--transicao-padrao),
+        box-shadow var(--transicao-padrao);
+}
+
+#form-login input::placeholder {
+    color: var(--cor-texto-secundario);
+    opacity: 0.75;
+}
+
+#form-login input:focus {
+    border-color: var(--cor-vermelha);
+    box-shadow: 0 0 0 3px rgba(217, 35, 50, 0.14);
+}
+
+/* Botão de entrar */
+
+.botao-entrar {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 16px;
+    padding: 14px 20px;
+    color: #ffffff;
+    background: var(--cor-vermelha);
+    border: 1px solid var(--cor-vermelha);
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+        background var(--transicao-padrao),
+        border-color var(--transicao-padrao),
+        transform var(--transicao-padrao);
+}
+
+.botao-entrar:hover {
+    background: var(--cor-vermelha-hover);
+    border-color: var(--cor-vermelha-hover);
+    transform: translateY(-1px);
+}
+
+.botao-entrar:focus-visible,
+.login-voltar:focus-visible {
+    outline: 2px solid var(--cor-vermelha);
+    outline-offset: 4px;
+}
+
+/* Mensagens do login */
+
+#mensagem-login {
+    min-height: 20px;
+    margin: 4px 0 0;
+    color: var(--cor-texto-secundario);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Link de retorno */
+
+.login-voltar {
+    display: block;
+    width: fit-content;
+    margin: 24px auto 0;
+    color: var(--cor-texto-secundario);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color var(--transicao-padrao);
+}
+
+.login-voltar:hover {
+    color: var(--cor-vermelha);
+}
+
+/* Responsividade */
+
+@media (max-width: 520px) {
+    .pagina-login {
+        min-height: auto;
+        padding: 40px 16px;
+    }
+
+    .login-card {
+        padding: 30px 22px;
+    }
+}
